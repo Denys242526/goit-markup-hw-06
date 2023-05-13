@@ -211,7 +211,7 @@ body {
     background-color: #4d5ae5;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+ 
 
 .service-button:hover,
 .service-button:focus {
@@ -679,6 +679,11 @@ body {
 
 .footer-icons {
     fill: #F4F4FD;
+}
+
+.form-footer {
+    display: block;
+    
 }
 
 .backdrop {
