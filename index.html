@@ -380,12 +380,18 @@
                     </li>
                 </ul>
             </div>
-             <p class="paragraph-icons">Subscribe</p>
-            <form name="form-footer" autocapitalize="off">
-                <label for="">
-                    <input type="text" name="user_email">
-                </label>
-            </form>
+            <div class="form-footer-container">
+                <p class="paragraph-subscribe">Subscribe</p>
+                <form class="form-footer-subscribe" name="form-footer">
+                    <label for="user-email" class="form-footer-label"></label>
+                        <input type="email" name="user-email" placeholder="Email" class="form-footer-input">
+                    <button type="submit" class="form-button">Subscribe
+                        <svg class="form-svg" width="24px" height="24px">
+                            <use href="./images/icons.svg#frame1"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
@@ -396,6 +402,50 @@
                     <use href="./images/icons.svg#close"></use>
                 </svg>
             </button>
+            <form class="form">
+                <p class="form-paragraf">Leave your contacts and we will call you back</p>
+                <label for="name" class="form-label">
+                    <span class="form-span">Name</span>
+                    <span class="form-input-icons">
+                        <input type="text" name="user-name" id="name" class="form-input" required pattern="^[a-zA-Z]+">
+                        <svg class="form-icons">
+                            <use href="./images/icons.svg#person"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <label for="tel" class="form-label">
+                    <span class="form-span">Phone</span>
+                    <span class="form-input-icons">
+                        <input type="tel" name="user-phone" id="tel" class="form-input" required
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}[0-9]{2}" title="xxx-xxx-xx-xx">
+                        <svg class="form-icons">
+                            <use href="./images/icons.svg#phone"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <label for="mail" class="form-label">
+                    <span class="form-span">Email</span>
+                    <span class="form-input-icons">
+                        <input type="email" name="user-mail" id="mail" class="form-input" required pattern="">
+                        <svg class="form-icons">
+                            <use href="./images/icons.svg#email"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <label for="comment" class="form-label">
+                    <span class="form-span">Comment</span>
+                    <textarea class="form-message" name="user-message" placeholder="Text input"></textarea>
+                </label>
+
+                <input id="user-polisy" type="checkbox" name="user-polisy" class="form-check visually-hidden">
+                <label for="user-polisy" class="form-check-text">I accept the terms and conditions of the
+                    &nbsp;<a href="">Privacy Policy</a></label>
+
+                <button type="submit" class="form-submit">Send</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
