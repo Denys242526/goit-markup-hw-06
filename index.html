@@ -384,7 +384,7 @@
                 <p class="paragraph-subscribe">Subscribe</p>
                 <form class="form-footer-subscribe" name="form-footer">
                     <label for="email" class="form-footer-label"></label>
-                        <input type="email" name="user-email" placeholder="Email" id="email" class="form-footer-input">
+                    <input type="email" name="user-email" placeholder="Email" id="email" class="form-footer-input">
                     <button type="submit" class="form-button">Subscribe
                         <svg class="form-svg" width="24px" height="24px">
                             <use href="./images/icons.svg#frame1"></use>
@@ -440,9 +440,21 @@
                     <textarea class="form-message" name="user-message" placeholder="Text input" id="comment"></textarea>
                 </label>
 
-                <input id="user-polisy" type="checkbox" name="user-polisy" class="form-check visually-hidden">
-                <label for="user-polisy" class="form-check-text">I accept the terms and conditions of the
-                    &nbsp;<a href="">Privacy Policy</a></label>
+
+
+
+
+                <label for="user-polisy" class="form-check-text">
+                    <input id="user-polisy" type="checkbox" name="user-polisy" class="form-check">
+                    <span class="span-icon"></span>
+                    I accept the terms and conditions of the
+                    &nbsp;<a href="" class="form-link">Privacy Policy</a>
+                </label>
+
+
+
+
+
 
                 <button type="submit" class="form-submit">Send</button>
             </form>
