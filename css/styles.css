@@ -1,3 +1,9 @@
+:root {
+
+--white-color: #ffffff;
+
+
+}
 h1,
 h2,
 h3,
@@ -39,7 +45,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     border-bottom: 1px solid #e7e9fc;
 }
@@ -151,7 +157,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    color: #FFFFFF;
+    color: var(--white-color);
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     background-color: #4D5AE5;
@@ -176,7 +182,7 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 4px;
-    color: #FFFFFF;
+    color: var(--white-color);
     background-color: #4d5ae5;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -261,12 +267,10 @@ body {
 
 .section-hero {
     margin: auto;
-    padding: 188px 0;
-    max-width: 1440px;
+    padding: 192px 0;
+    width: 100%;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/img-name.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
     background-color: #2E2F42;
 }
@@ -277,19 +281,18 @@ body {
     line-height: 0.7;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .title-hero {
-    max-width: 496px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
     font-size: 56px;
-    line-height: 0.7;
+    line-height: 60px;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .advantages-company-list {
@@ -309,7 +312,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: white;
+    color: var(--white-color);
 }
 
 .advantages-our-company {
@@ -559,7 +562,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .footer-list {
@@ -652,7 +655,7 @@ body {
 .btn:focus {
     background-color: #404bbf;
     border: none;
-    fill: #FFFFFF;
+    fill: var(--white-color);
 }
 
 .icons-btn {
@@ -673,7 +676,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 
@@ -696,7 +699,7 @@ body {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: #2E2F42;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .form-button {
@@ -716,7 +719,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .form {
@@ -850,7 +853,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: var(--white-color);
     background-color: #4D5AE5;
     border: none;
 }
